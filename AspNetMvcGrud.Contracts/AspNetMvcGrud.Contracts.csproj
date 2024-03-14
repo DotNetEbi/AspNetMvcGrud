@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetMvcGrud.Domain\AspNetMvcGrud.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

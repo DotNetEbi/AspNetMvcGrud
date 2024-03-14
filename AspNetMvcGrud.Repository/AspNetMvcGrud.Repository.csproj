@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetMvcGrud.Contracts\AspNetMvcGrud.Contracts.csproj" />
+    <ProjectReference Include="..\AspNetMvcGrud.DataAccessLayer\AspNetMvcGrud.DataAccessLayer.csproj" />
+  </ItemGroup>
+
+</Project>
