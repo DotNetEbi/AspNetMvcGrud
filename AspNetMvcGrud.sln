@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcGrud.Web", "AspNetMvcGrud.Web\AspNetMvcGrud.Web.csproj", "{FF24B546-C171-4A2E-A5FB-3140E2C174EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF24B546-C171-4A2E-A5FB-3140E2C174EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF24B546-C171-4A2E-A5FB-3140E2C174EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF24B546-C171-4A2E-A5FB-3140E2C174EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF24B546-C171-4A2E-A5FB-3140E2C174EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {576A9CD4-70B3-47F2-BB00-B4EC661307A2}
+	EndGlobalSection
+EndGlobal
