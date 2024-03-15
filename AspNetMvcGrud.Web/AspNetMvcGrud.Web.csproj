@@ -15,8 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AspNetMvcGrud.Contracts\AspNetMvcGrud.Contracts.csproj" />
     <ProjectReference Include="..\AspNetMvcGrud.DataAccessLayer\AspNetMvcGrud.DataAccessLayer.csproj" />
     <ProjectReference Include="..\AspNetMvcGrud.Domain\AspNetMvcGrud.Domain.csproj" />
+    <ProjectReference Include="..\AspNetMvcGrud.Repository\AspNetMvcGrud.Repository.csproj" />
+    <ProjectReference Include="..\AspNetMvcGrud.Service\AspNetMvcGrud.Service.csproj" />
 	  
   </ItemGroup>
 
