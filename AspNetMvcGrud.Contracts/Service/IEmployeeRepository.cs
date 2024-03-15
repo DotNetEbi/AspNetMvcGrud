@@ -16,4 +16,5 @@ public interface IEmployeeService
 	Task<Employee> FindByIDAsync(int id);
 
 	Task<List<Employee>> GetListByAsync(EmployeeFilter filter);
+	Task<List<Employee>> GetListAsync();
 }

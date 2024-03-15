@@ -152,10 +152,15 @@ public class EmployeeRepository : IEmployeeRepository
 				queryableEmployeeList = queryableEmployeeList.Where(item => item.Gender == filter.Gender);
 
 			if(filter.FromDateOfBirth != default)
-				queryableEmployeeList = queryableEmployeeList.Where(item => item.DateOfBirth >= filter.FromDateOfBirth);
+				queryableEmployeeList = queryableEmployeeList
+					.Where(item => 
+							item.DateOfBirth.Month >= filter.FromDateOfBirth.Month 
+							&& item.DateOfBirth.Day >= filter.FromDateOfBirth.Day);
 
 			if (filter.ToDateOfBirth != default)
-				queryableEmployeeList = queryableEmployeeList.Where(item => item.DateOfBirth <= filter.ToDateOfBirth);
+				queryableEmployeeList = queryableEmployeeList
+					.Where(item => item.DateOfBirth.Month <= filter.FromDateOfBirth.Month
+							&& item.DateOfBirth.Day <= filter.FromDateOfBirth.Day);
 
 			if (filter.FromJoinedDate != default)
 				queryableEmployeeList = queryableEmployeeList.Where(item => item.JoinedDate >= filter.FromJoinedDate);
