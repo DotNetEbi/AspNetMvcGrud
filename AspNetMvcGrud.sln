@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetMvcGrud.Domain", "Asp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetMvcGrud.DataAccessLayer", "AspNetMvcGrud.DataAccessLayer\AspNetMvcGrud.DataAccessLayer.csproj", "{7BB1AA40-CEAD-4FB0-9CFD-E4022F504B10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcGrud.Contracts", "AspNetMvcGrud.Contracts\AspNetMvcGrud.Contracts.csproj", "{FD775897-BE71-46DA-BD2F-9BED7928086E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetMvcGrud.Contracts", "AspNetMvcGrud.Contracts\AspNetMvcGrud.Contracts.csproj", "{FD775897-BE71-46DA-BD2F-9BED7928086E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcGrud.Repository", "AspNetMvcGrud.Repository\AspNetMvcGrud.Repository.csproj", "{45D9FF18-064D-4C85-996D-648B4FD00AD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetMvcGrud.Repository", "AspNetMvcGrud.Repository\AspNetMvcGrud.Repository.csproj", "{45D9FF18-064D-4C85-996D-648B4FD00AD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcGrud.Service", "AspNetMvcGrud.Service\AspNetMvcGrud.Service.csproj", "{3BE85DD0-053B-4F78-BC73-289379B201A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetMvcGrud.Service", "AspNetMvcGrud.Service\AspNetMvcGrud.Service.csproj", "{3BE85DD0-053B-4F78-BC73-289379B201A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcGrud.Validator", "AspNetMvcGrud.Validator\AspNetMvcGrud.Validator.csproj", "{15205C3E-1FA8-4E54-8FC2-018D59C4B12B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{3BE85DD0-053B-4F78-BC73-289379B201A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BE85DD0-053B-4F78-BC73-289379B201A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BE85DD0-053B-4F78-BC73-289379B201A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15205C3E-1FA8-4E54-8FC2-018D59C4B12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15205C3E-1FA8-4E54-8FC2-018D59C4B12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15205C3E-1FA8-4E54-8FC2-018D59C4B12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15205C3E-1FA8-4E54-8FC2-018D59C4B12B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
