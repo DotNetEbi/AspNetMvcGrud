@@ -13579,6 +13579,9 @@ th {
 .badge.bg-secondary, .badge.bg-light {
     color: #343a40;
 }
+select {
+    max-width: 100%;
+}
 
 .list-group-item h1,
 .list-group-item h2,

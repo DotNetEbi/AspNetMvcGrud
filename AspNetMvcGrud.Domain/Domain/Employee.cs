@@ -43,7 +43,6 @@ public class Employee
 	[DisplayName("Joined Date")]
 	public DateOnly JoinedDate { get; set; }
 
-	[Required]
 	[Column(TypeName = "date")]
 	[DisplayName("Relieved Date")]
 	public DateOnly RelievedDate { get; set; }
@@ -54,4 +53,8 @@ public class Employee
 
 	[Required]
 	public CurrentStatus Status { get; set; }
+
+	[NotMapped]
+	public bool InActive { get; set; }
+	
 }

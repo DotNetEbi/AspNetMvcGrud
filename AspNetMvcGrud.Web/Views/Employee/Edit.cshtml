@@ -1,0 +1,97 @@
+﻿@using AspNetMvcGrud.Domain;
+@using AspNetMvcGrud.Web.Helper;
+
+@{
+	List<SelectListItem> genderList = new List<SelectListItem>();
+}
+
+@model Employee;
+
+<form method="post" asp-action="Edit">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Edit Employee</h2>
+			<hr />
+		</div>
+		@*<div asp-validation-summary="All"></div>*@
+		<div class="mb-3">
+			<label asp-for="Name"></label>
+			<input asp-for="Name" class="form-control" />
+			<span asp-validation-for="Name" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Gender"></label>
+			@Html.DropDownListFor(m => m.Gender, ControllerHelper.GenderList, new {style="width: 250px;"})
+			<span asp-validation-for="Gender" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Address"></label>
+
+			<input asp-for="Address" class="form-control" />
+			<span asp-validation-for="Address" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="ContactNumber"></label>
+			<input asp-for="ContactNumber" class="form-control" />
+			<span asp-validation-for="ContactNumber" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="DateOfBirth"></label>
+			<input type="date" asp-for="DateOfBirth" class="form-control" />
+			<span asp-validation-for="DateOfBirth" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="Education"></label>
+			<input asp-for="Education" class="form-control" />
+			<span asp-validation-for="Education" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="Occupation"></label>
+			<input asp-for="Occupation" class="form-control" />
+			<span asp-validation-for="Occupation" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="JoinedDate"></label>
+			<input type="date" asp-for="JoinedDate" class="form-control" />
+			<span asp-validation-for="JoinedDate" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="RelievedDate"></label>
+			<input type="date" asp-for="RelievedDate" class="form-control" />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="Description"></label>
+			<input asp-for="Description" class="form-control" />
+			<span asp-validation-for="Description" class="text-danger"></span>
+		</div>
+
+		@{
+			bool inactive = Model.Status == CurrentStatus.Inactive;
+
+			<div class="mb-3">
+				<input type="checkbox" asp-for="InActive" checked="@inactive">
+				<label>Inactive</label>
+			</div>
+		}
+		
+		
+		<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+		<a asp-controller="Employee" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Back to List
+		</a>
+	</div>
+</form>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+
+	
+}
